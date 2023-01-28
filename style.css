@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+.body {
+    height: 100vh;
+    display: flex;
+    
+
+}
+.bg {
+    height: 100vh;
+    background-image: url('source/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text {
+    position: relative;
+    top: 5vh;
+    max-width: 85vw;
+    height: auto;
+    width: auto;
+    margin: 0 10%;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto' ;
+    font-weight: lighter;
+
+
+
+}
+.counter {
+font-weight: bold;
+}
+.game {
+  
+
+    position: relative;
+    top: 9vh;
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+
+
+    
+  }
+  .memory-card {
+    width: calc(50% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;   
+     transition: all .5s;
+
+
+  }
+.memory-card:active {
+    transform: scale(0.97);
+     transition: transform .2s;
+   }
+.memory-card.flip {
+ transform: rotateY(180deg);
+ transition: transform 0.5s;
+
+}
+.front-face, .back-face {
+    max-width: 95%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+
+  }
+.front-face {
+  transform: rotateY(180deg);
+}
+.logo {
+  display: none;
+
+  position: absolute;
+  top: 4vh;
+  width: auto;
+  margin: 0 15%;
+}
+
+.advantage-img {
+  /* display: none; */
+
+  position: absolute;
+  top: 13vh;
+  width: 80%;
+  margin-left: 11%;
+}
+ .clock {
+  position: absolute;
+  top: 0;
+  display: none;
+  /* opacity: 0; */
+
+}
+.couch {
+  position: absolute;
+  top: 0;
+  /* opacity: 0; */
+  display: none;
+}
+.bag {
+  position: absolute;
+  top: 0;
+  display: none;
+  /* opacity: 0; */
+}
+.offer {
+  display: none;
+
+  position: absolute;
+  top: 67vh;
+  width: auto;
+  margin: 0 11%;
+}
+
+.cta-btn {
+  position: absolute;
+  top: 76vh;
+  max-width: 70%;
+  width: auto;
+  margin-left: 16%;
+  display: none;
+}
+.solo {
+  display: none;
+}
+*:focus {
+  outline: none;
+}
+
+p {
+  display: inline;
+}
+.back-face {
+left: 2vw;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- To Use PLUG on devices with width > 1025px add script below to the head
+    
+          <script> 
+            if (window.innerWidth > 1025) {
+              window.location = "html5_plug/plug.html";
+                }
+          </script>
+    -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plug_style.css">
+    <title>Works only on mobile</title>
+    <script>
+      if (window.innerWidth < 1025) {
+        window.location = "../index.html";
+          }
+  </script>
+  </head>
+  <body>
+    <div class="" id="plug_bg">
+        <div class="plug_container">
+            <img class="plug_phone animated fadeIn " src="plug_phone.png" alt="Smartphone icon">
+            <img class="plug_tablet animated fadeIn " src="plug_tablet.png" alt="Tablet icon">
+        <p class="plug_text animated fadeIn ">Works only <br> on Mobile or Tablet</p>
+        <img class="qr_code animated fadeIn " src="qrcode.png" alt="QR code">
+
+    </div>
+    </div>
+</body>
+</html>
